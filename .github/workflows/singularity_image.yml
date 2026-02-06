@@ -1,4 +1,4 @@
-name: Build and Push Singularity Image
+name: Pull and Push Singularity Image
 
 on:
   push:
@@ -19,9 +19,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Build Singularity Image
+      - name: Pull Singularity Image
         run: |
-          # singularity build ciroh-ngen-singularity.sif singularity_ngen.def
           singularity pull library://mhchowdhury/collection/singularity_ngen
 
       - name: Test
