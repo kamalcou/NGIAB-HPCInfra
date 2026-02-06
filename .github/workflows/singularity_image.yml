@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Singularity Image
         run: |
-          sudo singularity build ciroh-ngen-singularity.sif singularity_ngen.def
+          singularity build ciroh-ngen-singularity.sif singularity_ngen.def
 
       - name: Test
         run: |
