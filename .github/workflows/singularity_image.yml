@@ -21,7 +21,8 @@ jobs:
 
       - name: Build Singularity Image
         run: |
-          singularity build ciroh-ngen-singularity.sif singularity_ngen.def
+          # singularity build ciroh-ngen-singularity.sif singularity_ngen.def
+          singularity pull library://mhchowdhury/collection/singularity_ngen
 
       - name: Test
         run: |
