@@ -1,4 +1,4 @@
-name: Pull and Push Singularity Image
+name: Build Singularity Image
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: X86
+    runs-on: self-hosted
     defaults:
       run:
         shell: bash
