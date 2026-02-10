@@ -21,7 +21,9 @@ jobs:
 
       - name: Pull Singularity Image
         run: |
-             sudo singularity build ciroh-ngen-singularity.sif singularity_ngen.def  # singularity pull library://mhchowdhury/collection/singularity_ngen
+             echo "pulling container image file"
+             singularity pull docker://joshcu/ngiab:dhbv2
+             #sudo singularity build ciroh-ngen-singularity.sif singularity_ngen.def  # singularity pull library://mhchowdhury/collection/singularity_ngen
 
       # - name: Test
       #   run: |
