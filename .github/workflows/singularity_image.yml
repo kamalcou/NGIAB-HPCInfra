@@ -1,4 +1,4 @@
-name: Build Singularity Image
+name: Pull Singularity Image
 
 on:
   push:
